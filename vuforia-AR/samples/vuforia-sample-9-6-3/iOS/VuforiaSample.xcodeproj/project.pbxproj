@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B25BC9B24CB1DE200CA900E /* MemoryStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B25BC9824CB1DE200CA900E /* MemoryStream.h */; };
+		8B25BC9C24CB1DE200CA900E /* tiny_obj_loader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B25BC9924CB1DE200CA900E /* tiny_obj_loader.h */; };
+		8B25BC9D24CB1DE200CA900E /* tiny_obj_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B25BC9A24CB1DE200CA900E /* tiny_obj_loader.cpp */; };
+		8B25BCA124CB1E1C00CA900E /* Astronaut.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BC9E24CB1E1C00CA900E /* Astronaut.obj */; };
+		8B25BCA224CB1E1C00CA900E /* Astronaut.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BC9F24CB1E1C00CA900E /* Astronaut.mtl */; };
+		8B25BCA324CB1E1C00CA900E /* Astronaut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BCA024CB1E1C00CA900E /* Astronaut.jpg */; };
+		8B25BCA724CB26C200CA900E /* VikingLander.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BCA424CB26C200CA900E /* VikingLander.mtl */; };
+		8B25BCA824CB26C200CA900E /* VikingLander.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BCA524CB26C200CA900E /* VikingLander.obj */; };
+		8B25BCA924CB26C200CA900E /* VikingLander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B25BCA624CB26C200CA900E /* VikingLander.jpg */; };
+		8B4D1B95244F034D00D394B4 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D1B94244F034D00D394B4 /* MetalRenderer.swift */; };
+		8B4D1B972450526E00D394B4 /* VuforiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D1B962450526E00D394B4 /* VuforiaViewController.swift */; };
+		8B4D1B992450627100D394B4 /* VuforiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D1B982450627100D394B4 /* VuforiaView.swift */; };
+		8B4D1B9B24588E6800D394B4 /* Models.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4D1B9A24588E6800D394B4 /* Models.h */; };
+		A5E41C3C258683D10020C21D /* PUSHILIN_star.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */; };
+		A5E41C3E258683DF0020C21D /* PUSHILIN_star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */; };
+		A5E41C42258683EB0020C21D /* Star.dat in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3F258683EB0020C21D /* Star.dat */; };
+		A5E41C43258683EB0020C21D /* Star.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C40258683EB0020C21D /* Star.xml */; };
+		A5E41C44258683EB0020C21D /* PUSHILIN_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C41258683EB0020C21D /* PUSHILIN_star.png */; };
+		CB266B8423DF5A0B00B96CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8323DF5A0B00B96CF8 /* AppDelegate.swift */; };
+		CB266B8623DF5A0B00B96CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8523DF5A0B00B96CF8 /* SceneDelegate.swift */; };
+		CB266B8823DF5A0B00B96CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8723DF5A0B00B96CF8 /* ViewController.swift */; };
+		CB266B8B23DF5A0B00B96CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB266B8923DF5A0B00B96CF8 /* Main.storyboard */; };
+		CB266B8D23DF5A0C00B96CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB266B8C23DF5A0C00B96CF8 /* Assets.xcassets */; };
+		CB266B9023DF5A0C00B96CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB266B8E23DF5A0C00B96CF8 /* LaunchScreen.storyboard */; };
+		CB266BA123DF64A200B96CF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266B9F23DF64A200B96CF8 /* CoreMedia.framework */; };
+		CB266BA223DF64A200B96CF8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA023DF64A200B96CF8 /* MediaPlayer.framework */; };
+		CB266BA323DF64F000B96CF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266B9F23DF64A200B96CF8 /* CoreMedia.framework */; };
+		CB266BA423DF64F000B96CF8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA023DF64A200B96CF8 /* MediaPlayer.framework */; };
+		CB266BAF23DF64F000B96CF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA523DF64F000B96CF8 /* CoreGraphics.framework */; };
+		CB266BB023DF64F000B96CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA623DF64F000B96CF8 /* Foundation.framework */; };
+		CB266BB123DF64F100B96CF8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA723DF64F000B96CF8 /* AudioToolbox.framework */; };
+		CB266BB223DF64F100B96CF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA823DF64F000B96CF8 /* QuartzCore.framework */; };
+		CB266BB323DF64F100B96CF8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BA923DF64F000B96CF8 /* Security.framework */; };
+		CB266BB423DF64F100B96CF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BAA23DF64F000B96CF8 /* SystemConfiguration.framework */; };
+		CB266BB523DF64F100B96CF8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BAB23DF64F000B96CF8 /* CoreFoundation.framework */; };
+		CB266BB623DF64F100B96CF8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BAC23DF64F000B96CF8 /* CoreMotion.framework */; };
+		CB266BB723DF64F100B96CF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BAD23DF64F000B96CF8 /* AVFoundation.framework */; };
+		CB266BB823DF64F100B96CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB266BAE23DF64F000B96CF8 /* UIKit.framework */; };
+		CB266BC123DF6F8E00B96CF8 /* VuforiaWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB266BBF23DF6F8E00B96CF8 /* VuforiaWrapper.cpp */; };
+		CB266C0823E0516E00B96CF8 /* MathUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB266C0623E0516E00B96CF8 /* MathUtils.cpp */; };
+		CB37BC9123F590AD00AD7588 /* AppController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB37BC8F23F590AD00AD7588 /* AppController.cpp */; };
+		CB37BC9223F590AD00AD7588 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = CB37BC9023F590AD00AD7588 /* AppController.h */; };
+		CB9E5A4523FD93D800491709 /* Vuforia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37BC8B23F574E200AD7588 /* Vuforia.framework */; };
+		CB9E5A4623FD93D800491709 /* Vuforia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB37BC8B23F574E200AD7588 /* Vuforia.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBD065CB23F321AA000A1FD8 /* VuforiaMars_ModelTarget.xml in Resources */ = {isa = PBXBuildFile; fileRef = CBD065C923F321A9000A1FD8 /* VuforiaMars_ModelTarget.xml */; };
+		CBD065CC23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat in Resources */ = {isa = PBXBuildFile; fileRef = CBD065CA23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat */; };
+		CBD5686023E1F615003B7E5A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5685F23E1F615003B7E5A /* Metal.framework */; };
+		CBD5686323E2027B003B7E5A /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CBD5686223E2027B003B7E5A /* shaders.metal */; };
+		CBD5687B23E83261003B7E5A /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = CBD5687523E83260003B7E5A /* StonesAndChips.xml */; };
+		CBD5687D23E83261003B7E5A /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = CBD5687723E83261003B7E5A /* StonesAndChips.dat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB9E5A4723FD93D900491709 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB9E5A4623FD93D800491709 /* Vuforia.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		403D106723F1BE7100FF249F /* Vuforia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vuforia.framework; path = ../../../build/Vuforia.framework; sourceTree = "<group>"; };
+		8B25BC9824CB1DE200CA900E /* MemoryStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryStream.h; sourceTree = "<group>"; };
+		8B25BC9924CB1DE200CA900E /* tiny_obj_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiny_obj_loader.h; sourceTree = "<group>"; };
+		8B25BC9A24CB1DE200CA900E /* tiny_obj_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tiny_obj_loader.cpp; sourceTree = "<group>"; };
+		8B25BC9E24CB1E1C00CA900E /* Astronaut.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Astronaut.obj; path = ImageTargets/Astronaut.obj; sourceTree = "<group>"; };
+		8B25BC9F24CB1E1C00CA900E /* Astronaut.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Astronaut.mtl; path = ImageTargets/Astronaut.mtl; sourceTree = "<group>"; };
+		8B25BCA024CB1E1C00CA900E /* Astronaut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Astronaut.jpg; path = ImageTargets/Astronaut.jpg; sourceTree = "<group>"; };
+		8B25BCA424CB26C200CA900E /* VikingLander.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VikingLander.mtl; sourceTree = "<group>"; };
+		8B25BCA524CB26C200CA900E /* VikingLander.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VikingLander.obj; sourceTree = "<group>"; };
+		8B25BCA624CB26C200CA900E /* VikingLander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VikingLander.jpg; sourceTree = "<group>"; };
+		8B4D1B94244F034D00D394B4 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		8B4D1B962450526E00D394B4 /* VuforiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VuforiaViewController.swift; sourceTree = "<group>"; };
+		8B4D1B982450627100D394B4 /* VuforiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VuforiaView.swift; sourceTree = "<group>"; };
+		8B4D1B9A24588E6800D394B4 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PUSHILIN_star.mtl; path = ImageTargets/PUSHILIN_star.mtl; sourceTree = "<group>"; };
+		A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PUSHILIN_star.obj; path = ImageTargets/PUSHILIN_star.obj; sourceTree = "<group>"; };
+		A5E41C3F258683EB0020C21D /* Star.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Star.dat; path = ImageTargets/Star.dat; sourceTree = "<group>"; };
+		A5E41C40258683EB0020C21D /* Star.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Star.xml; path = ImageTargets/Star.xml; sourceTree = "<group>"; };
+		A5E41C41258683EB0020C21D /* PUSHILIN_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PUSHILIN_star.png; path = ImageTargets/PUSHILIN_star.png; sourceTree = "<group>"; };
+		CB266B8023DF5A0B00B96CF8 /* VuforiaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VuforiaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB266B8323DF5A0B00B96CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB266B8523DF5A0B00B96CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB266B8723DF5A0B00B96CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB266B8A23DF5A0B00B96CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB266B8C23DF5A0C00B96CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB266B8F23DF5A0C00B96CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB266B9123DF5A0C00B96CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB266B9B23DF5DF200B96CF8 /* VuforiaWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VuforiaWrapper.h; sourceTree = "<group>"; };
+		CB266B9F23DF64A200B96CF8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB266BA023DF64A200B96CF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CB266BA523DF64F000B96CF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB266BA623DF64F000B96CF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB266BA723DF64F000B96CF8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB266BA823DF64F000B96CF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CB266BA923DF64F000B96CF8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB266BAA23DF64F000B96CF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB266BAB23DF64F000B96CF8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CB266BAC23DF64F000B96CF8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CB266BAD23DF64F000B96CF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB266BAE23DF64F000B96CF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB266BB923DF650500B96CF8 /* Vuforia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vuforia.framework; path = ../../../build/Vuforia.framework; sourceTree = "<group>"; };
+		CB266BBF23DF6F8E00B96CF8 /* VuforiaWrapper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = VuforiaWrapper.cpp; sourceTree = "<group>"; };
+		CB266C0623E0516E00B96CF8 /* MathUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtils.cpp; sourceTree = "<group>"; };
+		CB266C0723E0516E00B96CF8 /* MathUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = MathUtils.h; sourceTree = "<group>"; };
+		CB37BC8B23F574E200AD7588 /* Vuforia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vuforia.framework; path = ../../../build/Vuforia.framework; sourceTree = "<group>"; };
+		CB37BC8F23F590AD00AD7588 /* AppController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = AppController.cpp; sourceTree = "<group>"; };
+		CB37BC9023F590AD00AD7588 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		CBB2FF4123FAE2140024F183 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		CBD065C923F321A9000A1FD8 /* VuforiaMars_ModelTarget.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = VuforiaMars_ModelTarget.xml; sourceTree = "<group>"; };
+		CBD065CA23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = VuforiaMars_ModelTarget.dat; sourceTree = "<group>"; };
+		CBD5685F23E1F615003B7E5A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		CBD5686223E2027B003B7E5A /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		CBD5687523E83260003B7E5A /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = StonesAndChips.xml; path = ImageTargets/StonesAndChips.xml; sourceTree = "<group>"; };
+		CBD5687723E83261003B7E5A /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = StonesAndChips.dat; path = ImageTargets/StonesAndChips.dat; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB266B7D23DF5A0B00B96CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB266BB223DF64F100B96CF8 /* QuartzCore.framework in Frameworks */,
+				CB266BA323DF64F000B96CF8 /* CoreMedia.framework in Frameworks */,
+				CB266BB023DF64F000B96CF8 /* Foundation.framework in Frameworks */,
+				CB266BA223DF64A200B96CF8 /* MediaPlayer.framework in Frameworks */,
+				CB266BA423DF64F000B96CF8 /* MediaPlayer.framework in Frameworks */,
+				CB266BB823DF64F100B96CF8 /* UIKit.framework in Frameworks */,
+				CB266BB123DF64F100B96CF8 /* AudioToolbox.framework in Frameworks */,
+				CB266BB423DF64F100B96CF8 /* SystemConfiguration.framework in Frameworks */,
+				CB266BB623DF64F100B96CF8 /* CoreMotion.framework in Frameworks */,
+				CB9E5A4523FD93D800491709 /* Vuforia.framework in Frameworks */,
+				CB266BAF23DF64F000B96CF8 /* CoreGraphics.framework in Frameworks */,
+				CB266BB523DF64F100B96CF8 /* CoreFoundation.framework in Frameworks */,
+				CB266BB323DF64F100B96CF8 /* Security.framework in Frameworks */,
+				CB266BA123DF64A200B96CF8 /* CoreMedia.framework in Frameworks */,
+				CB266BB723DF64F100B96CF8 /* AVFoundation.framework in Frameworks */,
+				CBD5686023E1F615003B7E5A /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB266B7723DF5A0B00B96CF8 = {
+			isa = PBXGroup;
+			children = (
+				CBD065BD23F307FF000A1FD8 /* CrossPlatform */,
+				CBD5683223E1A5CB003B7E5A /* Assets */,
+				CB266B8223DF5A0B00B96CF8 /* iOS */,
+				CB266B8123DF5A0B00B96CF8 /* Products */,
+				CB266B9E23DF64A100B96CF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB266B8123DF5A0B00B96CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB266B8023DF5A0B00B96CF8 /* VuforiaSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB266B8223DF5A0B00B96CF8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB266B9123DF5A0C00B96CF8 /* Info.plist */,
+				CB266B8323DF5A0B00B96CF8 /* AppDelegate.swift */,
+				CB266B8523DF5A0B00B96CF8 /* SceneDelegate.swift */,
+				CB266B8723DF5A0B00B96CF8 /* ViewController.swift */,
+				CB266B8E23DF5A0C00B96CF8 /* LaunchScreen.storyboard */,
+				CB266B8923DF5A0B00B96CF8 /* Main.storyboard */,
+				CB266B8C23DF5A0C00B96CF8 /* Assets.xcassets */,
+				CB266BBF23DF6F8E00B96CF8 /* VuforiaWrapper.cpp */,
+				CB266B9B23DF5DF200B96CF8 /* VuforiaWrapper.h */,
+				8B4D1B962450526E00D394B4 /* VuforiaViewController.swift */,
+				8B4D1B982450627100D394B4 /* VuforiaView.swift */,
+				8B4D1B94244F034D00D394B4 /* MetalRenderer.swift */,
+				CBD5686223E2027B003B7E5A /* shaders.metal */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB266B9E23DF64A100B96CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403D106723F1BE7100FF249F /* Vuforia.framework */,
+				CB37BC8B23F574E200AD7588 /* Vuforia.framework */,
+				CBD5685F23E1F615003B7E5A /* Metal.framework */,
+				CB266BB923DF650500B96CF8 /* Vuforia.framework */,
+				CB266BA723DF64F000B96CF8 /* AudioToolbox.framework */,
+				CB266BAD23DF64F000B96CF8 /* AVFoundation.framework */,
+				CB266BAB23DF64F000B96CF8 /* CoreFoundation.framework */,
+				CB266BA523DF64F000B96CF8 /* CoreGraphics.framework */,
+				CB266BAC23DF64F000B96CF8 /* CoreMotion.framework */,
+				CB266BA623DF64F000B96CF8 /* Foundation.framework */,
+				CB266BA823DF64F000B96CF8 /* QuartzCore.framework */,
+				CB266BA923DF64F000B96CF8 /* Security.framework */,
+				CB266BAA23DF64F000B96CF8 /* SystemConfiguration.framework */,
+				CB266BAE23DF64F000B96CF8 /* UIKit.framework */,
+				CB266B9F23DF64A200B96CF8 /* CoreMedia.framework */,
+				CB266BA023DF64A200B96CF8 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBD065BD23F307FF000A1FD8 /* CrossPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				8B25BC9824CB1DE200CA900E /* MemoryStream.h */,
+				8B4D1B9A24588E6800D394B4 /* Models.h */,
+				CB266C0723E0516E00B96CF8 /* MathUtils.h */,
+				CB266C0623E0516E00B96CF8 /* MathUtils.cpp */,
+				CB37BC9023F590AD00AD7588 /* AppController.h */,
+				CB37BC8F23F590AD00AD7588 /* AppController.cpp */,
+				CBB2FF4123FAE2140024F183 /* Log.h */,
+				8B25BC9924CB1DE200CA900E /* tiny_obj_loader.h */,
+				8B25BC9A24CB1DE200CA900E /* tiny_obj_loader.cpp */,
+			);
+			name = CrossPlatform;
+			path = ../CrossPlatform;
+			sourceTree = "<group>";
+		};
+		CBD065CD23F321AF000A1FD8 /* ModelTargets */ = {
+			isa = PBXGroup;
+			children = (
+				8B25BCA624CB26C200CA900E /* VikingLander.jpg */,
+				8B25BCA424CB26C200CA900E /* VikingLander.mtl */,
+				8B25BCA524CB26C200CA900E /* VikingLander.obj */,
+				CBD065CA23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat */,
+				CBD065C923F321A9000A1FD8 /* VuforiaMars_ModelTarget.xml */,
+			);
+			path = ModelTargets;
+			sourceTree = "<group>";
+		};
+		CBD5683223E1A5CB003B7E5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CBD065CD23F321AF000A1FD8 /* ModelTargets */,
+				CBD5688023E83271003B7E5A /* ImageTargets */,
+			);
+			name = Assets;
+			path = ../Assets;
+			sourceTree = "<group>";
+		};
+		CBD5688023E83271003B7E5A /* ImageTargets */ = {
+			isa = PBXGroup;
+			children = (
+				A5E41C41258683EB0020C21D /* PUSHILIN_star.png */,
+				A5E41C3F258683EB0020C21D /* Star.dat */,
+				A5E41C40258683EB0020C21D /* Star.xml */,
+				A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */,
+				A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */,
+				8B25BCA024CB1E1C00CA900E /* Astronaut.jpg */,
+				8B25BC9F24CB1E1C00CA900E /* Astronaut.mtl */,
+				8B25BC9E24CB1E1C00CA900E /* Astronaut.obj */,
+				CBD5687723E83261003B7E5A /* StonesAndChips.dat */,
+				CBD5687523E83260003B7E5A /* StonesAndChips.xml */,
+			);
+			name = ImageTargets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CBD5686D23E34DF7003B7E5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4D1B9B24588E6800D394B4 /* Models.h in Headers */,
+				8B25BC9B24CB1DE200CA900E /* MemoryStream.h in Headers */,
+				CB37BC9223F590AD00AD7588 /* AppController.h in Headers */,
+				8B25BC9C24CB1DE200CA900E /* tiny_obj_loader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CB266B7F23DF5A0B00B96CF8 /* VuforiaSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB266B9423DF5A0C00B96CF8 /* Build configuration list for PBXNativeTarget "VuforiaSample" */;
+			buildPhases = (
+				CBD5686D23E34DF7003B7E5A /* Headers */,
+				CB266B7C23DF5A0B00B96CF8 /* Sources */,
+				CB266B7D23DF5A0B00B96CF8 /* Frameworks */,
+				CB266B7E23DF5A0B00B96CF8 /* Resources */,
+				CB9E5A4723FD93D900491709 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VuforiaSample;
+			productName = VuforiaSample;
+			productReference = CB266B8023DF5A0B00B96CF8 /* VuforiaSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB266B7823DF5A0B00B96CF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "PTC Inc.";
+				TargetAttributes = {
+					CB266B7F23DF5A0B00B96CF8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = CB266B7B23DF5A0B00B96CF8 /* Build configuration list for PBXProject "VuforiaSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB266B7723DF5A0B00B96CF8;
+			productRefGroup = CB266B8123DF5A0B00B96CF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB266B7F23DF5A0B00B96CF8 /* VuforiaSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB266B7E23DF5A0B00B96CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD065CB23F321AA000A1FD8 /* VuforiaMars_ModelTarget.xml in Resources */,
+				CBD065CC23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat in Resources */,
+				CB266B9023DF5A0C00B96CF8 /* LaunchScreen.storyboard in Resources */,
+				CB266B8D23DF5A0C00B96CF8 /* Assets.xcassets in Resources */,
+				CBD5687B23E83261003B7E5A /* StonesAndChips.xml in Resources */,
+				A5E41C3C258683D10020C21D /* PUSHILIN_star.mtl in Resources */,
+				8B25BCA924CB26C200CA900E /* VikingLander.jpg in Resources */,
+				A5E41C44258683EB0020C21D /* PUSHILIN_star.png in Resources */,
+				8B25BCA224CB1E1C00CA900E /* Astronaut.mtl in Resources */,
+				CB266B8B23DF5A0B00B96CF8 /* Main.storyboard in Resources */,
+				A5E41C42258683EB0020C21D /* Star.dat in Resources */,
+				8B25BCA724CB26C200CA900E /* VikingLander.mtl in Resources */,
+				8B25BCA324CB1E1C00CA900E /* Astronaut.jpg in Resources */,
+				CBD5687D23E83261003B7E5A /* StonesAndChips.dat in Resources */,
+				8B25BCA124CB1E1C00CA900E /* Astronaut.obj in Resources */,
+				A5E41C3E258683DF0020C21D /* PUSHILIN_star.obj in Resources */,
+				8B25BCA824CB26C200CA900E /* VikingLander.obj in Resources */,
+				A5E41C43258683EB0020C21D /* Star.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB266B7C23DF5A0B00B96CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB266B8823DF5A0B00B96CF8 /* ViewController.swift in Sources */,
+				8B4D1B992450627100D394B4 /* VuforiaView.swift in Sources */,
+				8B4D1B972450526E00D394B4 /* VuforiaViewController.swift in Sources */,
+				8B25BC9D24CB1DE200CA900E /* tiny_obj_loader.cpp in Sources */,
+				CB266BC123DF6F8E00B96CF8 /* VuforiaWrapper.cpp in Sources */,
+				CB266B8423DF5A0B00B96CF8 /* AppDelegate.swift in Sources */,
+				CB37BC9123F590AD00AD7588 /* AppController.cpp in Sources */,
+				CBD5686323E2027B003B7E5A /* shaders.metal in Sources */,
+				CB266B8623DF5A0B00B96CF8 /* SceneDelegate.swift in Sources */,
+				CB266C0823E0516E00B96CF8 /* MathUtils.cpp in Sources */,
+				8B4D1B95244F034D00D394B4 /* MetalRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB266B8923DF5A0B00B96CF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB266B8A23DF5A0B00B96CF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB266B8E23DF5A0C00B96CF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB266B8F23DF5A0C00B96CF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB266B9223DF5A0C00B96CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../build\"",
+					"../../../../../Vuforia_install/iOS/Internal/OpenAR/bin/$(CONFIGURATION)/arm64/",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		CB266B9323DF5A0C00B96CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../build\"",
+					"../../../../../Vuforia_install/iOS/Internal/OpenAR/bin/$(CONFIGURATION)/arm64/",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		CB266B9523DF5A0C00B96CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 735P3R8MUU;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuforia.engine.NativeSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = VuforiaWrapper.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CB266B9623DF5A0C00B96CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 735P3R8MUU;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuforia.engine.NativeSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = VuforiaWrapper.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB266B7B23DF5A0B00B96CF8 /* Build configuration list for PBXProject "VuforiaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB266B9223DF5A0C00B96CF8 /* Debug */,
+				CB266B9323DF5A0C00B96CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB266B9423DF5A0C00B96CF8 /* Build configuration list for PBXNativeTarget "VuforiaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB266B9523DF5A0C00B96CF8 /* Debug */,
+				CB266B9623DF5A0C00B96CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB266B7823DF5A0B00B96CF8 /* Project object */;
+}

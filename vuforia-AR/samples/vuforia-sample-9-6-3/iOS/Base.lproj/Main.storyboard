@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="VuforiaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-Uc-wCG">
+                                <rect key="frame" x="22" y="-312" width="852" height="1038"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="G5a-E9-oAT" userLabel="IT icon and label">
+                                        <rect key="frame" x="0.0" y="383.5" width="128" height="148.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageTargetsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cmR-1y-sXt">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="195" id="LjA-gh-LPd"/>
+                                                    <constraint firstAttribute="height" constant="250" id="rng-cz-y84"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Targets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeQ-2w-93J">
+                                                <rect key="frame" x="0.0" y="250" width="195" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEZ-aQ-fZF">
+                                        <rect key="frame" x="396" y="369" width="60" height="300.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0kK-Zb-FLt"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="rak-AB-1Zf" userLabel="MT icon and label">
+                                        <rect key="frame" x="657" y="383.5" width="128" height="148.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ModelTargetsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-WQ-psV">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="195" id="B3D-7S-eA9"/>
+                                                    <constraint firstAttribute="height" constant="250" id="dI6-Ph-x2H"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Model Targets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSX-uX-dYo">
+                                                <rect key="frame" x="0.0" y="250" width="195" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hg5-Uc-wCG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XHe-4Z-D6k"/>
+                            <constraint firstItem="Hg5-Uc-wCG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j3z-UC-yFy"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="712" height="984"/>
+                    <connections>
+                        <outlet property="imageTargetImageView" destination="cmR-1y-sXt" id="fvC-qR-V9v"/>
+                        <outlet property="modelTargetImageView" destination="oL5-WQ-psV" id="mxG-gh-FH7"/>
+                        <segue destination="vWN-aC-iqg" kind="presentation" identifier="ImageTargetSegue" modalPresentationStyle="fullScreen" id="ZcL-3T-hbi"/>
+                        <segue destination="5LG-Y5-dSu" kind="presentation" identifier="ModelTargetSegue" modalPresentationStyle="fullScreen" id="vKe-zR-2eF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254.9107142857142" y="-224.63768115942031"/>
+        </scene>
+        <!--Image Target-->
+        <scene sceneID="uSe-xF-49W">
+            <objects>
+                <viewController id="vWN-aC-iqg" userLabel="Image Target" customClass="VuforiaViewController" customModule="VuforiaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8c-JF-3Vm" customClass="VuforiaView" customModule="VuforiaSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jaf-nJ-F3I"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IPS-Bx-don"/>
+                    <connections>
+                        <outlet property="mVuforiaView" destination="L8c-JF-3Vm" id="F6O-7J-Cpt"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="returnSegueIT" id="iqK-wD-Rp6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwB-da-oJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="1354"/>
+        </scene>
+        <!--Model Target-->
+        <scene sceneID="ReO-ET-47J">
+            <objects>
+                <viewController id="5LG-Y5-dSu" userLabel="Model Target" customClass="VuforiaViewController" customModule="VuforiaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x4Q-PF-Vjk" customClass="VuforiaView" customModule="VuforiaSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ap0-vW-joo"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mVuforiaView" destination="x4Q-PF-Vjk" id="Yih-1e-iFf"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="returnSegueMT" id="2iv-BK-FFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwa-DI-XzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="1354"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2iv-BK-FFG"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="ImageTargetsIcon" width="128" height="128"/>
+        <image name="ModelTargetsIcon" width="128" height="128"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
