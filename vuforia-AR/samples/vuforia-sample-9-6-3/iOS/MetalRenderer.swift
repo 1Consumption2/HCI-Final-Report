@@ -25,6 +25,7 @@ class MetalRenderer {
     private var mVideoBackgroundIndices:MTLBuffer!
     private var mVideoBackgroundTextureCoordinates:MTLBuffer!
 
+    // Buffers for augmentation model-view-projection matrices
     private var mAugmentationMVP:MTLBuffer!
     private var mAugmentationScaledMVP:MTLBuffer!
 
@@ -116,9 +117,9 @@ class MetalRenderer {
         mVideoBackgroundVertices = mMetalDevice.makeBuffer(length: MemoryLayout<Float>.size * 3 * 4, options: [])
         mVideoBackgroundTextureCoordinates = mMetalDevice.makeBuffer(length: MemoryLayout<Float>.size * 2 * 4, options: [])
         mVideoBackgroundIndices = mMetalDevice.makeBuffer(length: MemoryLayout<UInt16>.size * 6, options: [])
-
+        
         loadModels()
-
+        
         mAugmentationMVP = mMetalDevice.makeBuffer(length: MemoryLayout<Float>.size * 16)
         mAugmentationScaledMVP = mMetalDevice.makeBuffer(length: MemoryLayout<Float>.size * 16)
     }
@@ -154,12 +155,9 @@ class MetalRenderer {
     /// Render augmentation for the world origin
     func renderWorldOrigin(encoder: MTLRenderCommandEncoder?, projectionMatrix: matrix_float4x4, modelViewMatrix: matrix_float4x4) {
 
-        // Scale the model view for cube rendering and update MVP
-
         encoder?.setRenderPipelineState(mUniformColorShaderPipelineState)
         var color = colorGrey
         encoder?.setFragmentBytes(&color, length: MemoryLayout.size(ofValue: color), index: 0)
-
     }
 
     
@@ -182,6 +180,7 @@ class MetalRenderer {
         // Draw translucent square
         color[3] = 0.2
         encoder?.setFragmentBytes(&color, length: MemoryLayout.size(ofValue: color), index: 0)
+        // Draw solid wireframe
         color[3] = 1.0
         encoder?.setFragmentBytes(&color, length: MemoryLayout.size(ofValue: color), index: 0)
 
@@ -240,6 +239,18 @@ class MetalRenderer {
         encoder?.setFragmentTexture(mGuideViewTexture, index: 0)
         encoder?.setVertexBuffer(modelViewProjectionMatrix, offset: 0, index: 1)
     }
+    
+    
+    private func renderAxis(encoder: MTLRenderCommandEncoder?, mvpBuffer: MTLBuffer,
+                          projectionMatrix: matrix_float4x4, modelViewMatrix: matrix_float4x4, scale: vector_float3) {
+        // Scale the model view for axis rendering and update MVP
+        let modelViewMatrixScaled = modelViewMatrix * matrix_float4x4(diagonal: SIMD4<Float>(scale.x, scale.y, scale.z, 1.0))
+        var modelViewProjectionMatrix = projectionMatrix * modelViewMatrixScaled
+        mvpBuffer.contents().copyMemory(from: &modelViewProjectionMatrix.columns, byteCount: MemoryLayout<Float>.size * 16)
+        
+        encoder?.setVertexBuffer(mvpBuffer, offset: 0, index: 2)
+    }
+
     
     private func renderModel(encoder: MTLRenderCommandEncoder?,
                              vertices: MTLBuffer, vertexCount: Int,

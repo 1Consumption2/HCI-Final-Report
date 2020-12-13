@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,11 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-Uc-wCG">
-                                <rect key="frame" x="22" y="-312" width="852" height="1038"/>
+                                <rect key="frame" x="223" y="57" width="450" height="300.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="G5a-E9-oAT" userLabel="IT icon and label">
-                                        <rect key="frame" x="0.0" y="383.5" width="128" height="148.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="76" width="195" height="270.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageTargetsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cmR-1y-sXt">
                                                 <rect key="frame" x="0.0" y="0.0" width="195" height="250"/>
@@ -32,7 +30,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Targets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeQ-2w-93J">
-                                                <rect key="frame" x="0.0" y="250" width="195" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="128" width="195" height="20.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                 </accessibility>
@@ -43,24 +41,23 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEZ-aQ-fZF">
-                                        <rect key="frame" x="396" y="369" width="60" height="300.5"/>
+                                        <rect key="frame" x="195" y="0.0" width="60" height="300.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="0kK-Zb-FLt"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="rak-AB-1Zf" userLabel="MT icon and label">
-                                        <rect key="frame" x="657" y="383.5" width="128" height="148.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="255" y="15" width="195" height="270.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ModelTargetsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-WQ-psV">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ModelTargetsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-WQ-psV">
                                                 <rect key="frame" x="0.0" y="0.0" width="195" height="250"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="195" id="B3D-7S-eA9"/>
                                                     <constraint firstAttribute="height" constant="250" id="dI6-Ph-x2H"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Model Targets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSX-uX-dYo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model Targets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSX-uX-dYo">
                                                 <rect key="frame" x="0.0" y="250" width="195" height="20.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -74,13 +71,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hg5-Uc-wCG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XHe-4Z-D6k"/>
                             <constraint firstItem="Hg5-Uc-wCG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j3z-UC-yFy"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="712" height="984"/>
                     <connections>
@@ -101,8 +98,8 @@
                     <view key="view" contentMode="scaleToFill" id="L8c-JF-3Vm" customClass="VuforiaView" customModule="VuforiaSample" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jaf-nJ-F3I"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="IPS-Bx-don"/>
                     <connections>
@@ -121,8 +118,8 @@
                     <view key="view" contentMode="scaleToFill" id="x4Q-PF-Vjk" customClass="VuforiaView" customModule="VuforiaSample" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ap0-vW-joo"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
                     <connections>
                         <outlet property="mVuforiaView" destination="x4Q-PF-Vjk" id="Yih-1e-iFf"/>
@@ -135,19 +132,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2iv-BK-FFG"/>
+        <segue reference="iqK-wD-Rp6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ImageTargetsIcon" width="128" height="128"/>
         <image name="ModelTargetsIcon" width="128" height="128"/>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

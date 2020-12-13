@@ -20,11 +20,11 @@
 		8B4D1B972450526E00D394B4 /* VuforiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D1B962450526E00D394B4 /* VuforiaViewController.swift */; };
 		8B4D1B992450627100D394B4 /* VuforiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D1B982450627100D394B4 /* VuforiaView.swift */; };
 		8B4D1B9B24588E6800D394B4 /* Models.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4D1B9A24588E6800D394B4 /* Models.h */; };
-		A5E41C3C258683D10020C21D /* PUSHILIN_star.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */; };
-		A5E41C3E258683DF0020C21D /* PUSHILIN_star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */; };
-		A5E41C42258683EB0020C21D /* Star.dat in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C3F258683EB0020C21D /* Star.dat */; };
-		A5E41C43258683EB0020C21D /* Star.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C40258683EB0020C21D /* Star.xml */; };
-		A5E41C44258683EB0020C21D /* PUSHILIN_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E41C41258683EB0020C21D /* PUSHILIN_star.png */; };
+		A5AF0AF525869B9400E43F60 /* Star.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5AF0AF325869B9400E43F60 /* Star.xml */; };
+		A5AF0AF625869B9400E43F60 /* Star.dat in Resources */ = {isa = PBXBuildFile; fileRef = A5AF0AF425869B9400E43F60 /* Star.dat */; };
+		A5AF0AFA25869B9C00E43F60 /* PUSHILIN_star.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A5AF0AF725869B9C00E43F60 /* PUSHILIN_star.mtl */; };
+		A5AF0AFB25869B9C00E43F60 /* PUSHILIN_star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A5AF0AF825869B9C00E43F60 /* PUSHILIN_star.obj */; };
+		A5AF0AFC25869B9C00E43F60 /* PUSHILIN_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AF0AF925869B9C00E43F60 /* PUSHILIN_star.png */; };
 		CB266B8423DF5A0B00B96CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8323DF5A0B00B96CF8 /* AppDelegate.swift */; };
 		CB266B8623DF5A0B00B96CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8523DF5A0B00B96CF8 /* SceneDelegate.swift */; };
 		CB266B8823DF5A0B00B96CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB266B8723DF5A0B00B96CF8 /* ViewController.swift */; };
@@ -88,11 +88,11 @@
 		8B4D1B962450526E00D394B4 /* VuforiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VuforiaViewController.swift; sourceTree = "<group>"; };
 		8B4D1B982450627100D394B4 /* VuforiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VuforiaView.swift; sourceTree = "<group>"; };
 		8B4D1B9A24588E6800D394B4 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
-		A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PUSHILIN_star.mtl; path = ImageTargets/PUSHILIN_star.mtl; sourceTree = "<group>"; };
-		A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PUSHILIN_star.obj; path = ImageTargets/PUSHILIN_star.obj; sourceTree = "<group>"; };
-		A5E41C3F258683EB0020C21D /* Star.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Star.dat; path = ImageTargets/Star.dat; sourceTree = "<group>"; };
-		A5E41C40258683EB0020C21D /* Star.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Star.xml; path = ImageTargets/Star.xml; sourceTree = "<group>"; };
-		A5E41C41258683EB0020C21D /* PUSHILIN_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PUSHILIN_star.png; path = ImageTargets/PUSHILIN_star.png; sourceTree = "<group>"; };
+		A5AF0AF325869B9400E43F60 /* Star.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Star.xml; sourceTree = "<group>"; };
+		A5AF0AF425869B9400E43F60 /* Star.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Star.dat; sourceTree = "<group>"; };
+		A5AF0AF725869B9C00E43F60 /* PUSHILIN_star.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PUSHILIN_star.mtl; sourceTree = "<group>"; };
+		A5AF0AF825869B9C00E43F60 /* PUSHILIN_star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PUSHILIN_star.obj; sourceTree = "<group>"; };
+		A5AF0AF925869B9C00E43F60 /* PUSHILIN_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PUSHILIN_star.png; sourceTree = "<group>"; };
 		CB266B8023DF5A0B00B96CF8 /* VuforiaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VuforiaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB266B8323DF5A0B00B96CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB266B8523DF5A0B00B96CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -261,11 +261,11 @@
 		CBD5688023E83271003B7E5A /* ImageTargets */ = {
 			isa = PBXGroup;
 			children = (
-				A5E41C41258683EB0020C21D /* PUSHILIN_star.png */,
-				A5E41C3F258683EB0020C21D /* Star.dat */,
-				A5E41C40258683EB0020C21D /* Star.xml */,
-				A5E41C3D258683DF0020C21D /* PUSHILIN_star.obj */,
-				A5E41C3B258683D00020C21D /* PUSHILIN_star.mtl */,
+				A5AF0AF725869B9C00E43F60 /* PUSHILIN_star.mtl */,
+				A5AF0AF825869B9C00E43F60 /* PUSHILIN_star.obj */,
+				A5AF0AF925869B9C00E43F60 /* PUSHILIN_star.png */,
+				A5AF0AF425869B9400E43F60 /* Star.dat */,
+				A5AF0AF325869B9400E43F60 /* Star.xml */,
 				8B25BCA024CB1E1C00CA900E /* Astronaut.jpg */,
 				8B25BC9F24CB1E1C00CA900E /* Astronaut.mtl */,
 				8B25BC9E24CB1E1C00CA900E /* Astronaut.obj */,
@@ -351,23 +351,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD065CB23F321AA000A1FD8 /* VuforiaMars_ModelTarget.xml in Resources */,
+				A5AF0AFA25869B9C00E43F60 /* PUSHILIN_star.mtl in Resources */,
 				CBD065CC23F321AA000A1FD8 /* VuforiaMars_ModelTarget.dat in Resources */,
 				CB266B9023DF5A0C00B96CF8 /* LaunchScreen.storyboard in Resources */,
 				CB266B8D23DF5A0C00B96CF8 /* Assets.xcassets in Resources */,
 				CBD5687B23E83261003B7E5A /* StonesAndChips.xml in Resources */,
-				A5E41C3C258683D10020C21D /* PUSHILIN_star.mtl in Resources */,
 				8B25BCA924CB26C200CA900E /* VikingLander.jpg in Resources */,
-				A5E41C44258683EB0020C21D /* PUSHILIN_star.png in Resources */,
+				A5AF0AFC25869B9C00E43F60 /* PUSHILIN_star.png in Resources */,
 				8B25BCA224CB1E1C00CA900E /* Astronaut.mtl in Resources */,
+				A5AF0AF525869B9400E43F60 /* Star.xml in Resources */,
 				CB266B8B23DF5A0B00B96CF8 /* Main.storyboard in Resources */,
-				A5E41C42258683EB0020C21D /* Star.dat in Resources */,
 				8B25BCA724CB26C200CA900E /* VikingLander.mtl in Resources */,
+				A5AF0AF625869B9400E43F60 /* Star.dat in Resources */,
+				A5AF0AFB25869B9C00E43F60 /* PUSHILIN_star.obj in Resources */,
 				8B25BCA324CB1E1C00CA900E /* Astronaut.jpg in Resources */,
 				CBD5687D23E83261003B7E5A /* StonesAndChips.dat in Resources */,
 				8B25BCA124CB1E1C00CA900E /* Astronaut.obj in Resources */,
-				A5E41C3E258683DF0020C21D /* PUSHILIN_star.obj in Resources */,
 				8B25BCA824CB26C200CA900E /* VikingLander.obj in Resources */,
-				A5E41C43258683EB0020C21D /* Star.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
